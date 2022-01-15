@@ -1,0 +1,6 @@
+.user-card {
+  max-width: fit-content;
+  margin: 10vh auto;
+  border-radius: 20px;
+  font-size: 26px;
+}

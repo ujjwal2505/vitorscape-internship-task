@@ -12,7 +12,6 @@ const authReducer = (state = initState, action) => {
       toast.info("Remember the E-CODE to login again");
       return { ...state, token: action.token, authError: "" };
     case "LOGIN_ERROR":
-      console.log("inreducer", action.error.response);
       return { ...state, authError: action.error.message };
     case "LOGOUT_SUCCESS":
       toast.success("Successfully logged out");

@@ -6,7 +6,7 @@ import store from "./store/index";
 import { Provider } from "react-redux";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://vitorscape-internship.herokuapp.com";
+axios.defaults.baseURL = "http://localhost:8000";
 
 ReactDOM.render(
   <React.StrictMode>

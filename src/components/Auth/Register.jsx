@@ -81,7 +81,7 @@ const Register = (props) => {
           </p>
         </form>
         {authError ? (
-          <div class="p-3 mb-2 bg-danger text-white">
+          <div className="p-3 mb-2 bg-danger text-white">
             <span>{authError}</span>
           </div>
         ) : null}

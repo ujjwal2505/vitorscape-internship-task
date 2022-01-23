@@ -6,7 +6,7 @@ import { Link, Navigate } from "react-router-dom";
 
 const Login = (props) => {
   const [state, setState] = useState({
-    eCode: "",
+    email: "",
     password: "",
   });
 
@@ -32,10 +32,10 @@ const Login = (props) => {
 
         <form className="form-signin" onSubmit={handleSubmit}>
           <input
-            type="number"
-            id="eCode"
+            type="email"
+            id="email"
             className="form-control"
-            placeholder="Ecode"
+            placeholder="email"
             onChange={handleChange}
           />
 

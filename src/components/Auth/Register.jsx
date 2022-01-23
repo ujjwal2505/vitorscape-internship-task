@@ -8,8 +8,10 @@ const Register = (props) => {
   const [state, setState] = useState({
     name: "",
     surname: "",
+    email: "",
     password: "",
-    userType: "",
+    phone: "",
+    address: "",
   });
 
   const handleChange = (e) => {
@@ -50,14 +52,36 @@ const Register = (props) => {
           />
 
           <input
+            type="email"
+            className="form-control"
+            placeholder="Email"
+            id="email"
+            onChange={handleChange}
+          />
+
+          <input
             type="password"
             id="password"
             className="form-control"
             placeholder="Password"
             onChange={handleChange}
           />
+          <input
+            type="number"
+            className="form-control"
+            placeholder="Phone No."
+            id="phone"
+            onChange={handleChange}
+          />
 
-          <select
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Address"
+            id="address"
+            onChange={handleChange}
+          />
+          {/* <select
             className="form-control"
             id="userType"
             onChange={handleChange}
@@ -67,7 +91,7 @@ const Register = (props) => {
             </option>
             <option value="ADMIN">ADMIN</option>
             <option value="EMPLOYEE">EMPLOYEE</option>
-          </select>
+          </select> */}
 
           <button className="btn btn-outline-success btn-block" type="submit">
             <i className="fas fa-sign-in-alt" /> Register

@@ -12,6 +12,7 @@ const logIn = (user) => {
         user: response.data.user,
       });
     } catch (error) {
+      console.log(error);
       dispatch({ type: "LOGIN_ERROR", error: error.response.data });
     }
   };
